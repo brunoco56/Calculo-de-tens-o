@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int calculaTensaoDeSaida (float r1, float r2, float vIn)
+{
+	float vOut;
+	 vOut = (r2/(r1+r2))*vIn;
+	 return vOut;
+}
+
+int main()
+{
+	float r1, r2, vIn, vOut;
+	cout <<"Digite o valor de R1: ";
+	cin>> r1;
+	cout<<"Digite o valor de R2: ";
+	cin>>r2;
+	cout<<"Digite o valor de Vin: ";
+	cin>>vIn;
+	float resposta = calculaTensaoDeSaida(r1, r2, vIn);
+	cout<<"O valor e : "<< resposta;
+
+	return 0;
+		
+}
